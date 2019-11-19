@@ -22,8 +22,9 @@ export class StreamingService {
 
 public getMessages = () => {
         return Observable.create((observer) => {
-            this.socket.on('data', (message) => {
+            this.socket.on('tcpdata', (message) => {
                  observer.next(message);
+                 console.log(message);
             });
         });
     }

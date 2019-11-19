@@ -33,7 +33,7 @@ function MulticastNew(data) {
 client.on('data', function (data) {
   var bu = readIntegerFromCurrentPos(data)
  //console.log('int  : ' + currentPos);
-  console.log('bu  : ' + bu);
+  //console.log('bu  : ' + bu);
   //console.log('client.bytesRead  : ' + client.bytesRead);
 
   // send incoming TCP as multicast data

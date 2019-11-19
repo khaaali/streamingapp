@@ -38,7 +38,8 @@ io.on('connection', (socket) => {
     console.log('user connected');
 
 socket.on('new-message', (message) => {
-        io.emit('new-message', worker);
+	console.log(message);
+        io.emit('tcpdata', message);
     });
     
 
