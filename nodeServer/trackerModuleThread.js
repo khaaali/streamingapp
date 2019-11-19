@@ -1,4 +1,5 @@
 // This thread reads data from tracker and uses osc for broadcasting 
+const { workerData, parentPort } = require('worker_threads')
 
 // creating TCP socket config
 const net = require('net');
@@ -10,7 +11,7 @@ var currentPos = 0;
 
 // Connecting to TCP socket
 client.connect(port, host, function () {
-  console.log('Connected');
+  console.log('Connected image sender');
 });
 
 
@@ -35,7 +36,7 @@ client.on('data', function (data) {
  //console.log('int  : ' + currentPos);
   //console.log('bu  : ' + bu);
   //console.log('client.bytesRead  : ' + client.bytesRead);
-
+parentPort.postMessage({bu:bu })
   // send incoming TCP as multicast data
   //MulticastNew(data)
 

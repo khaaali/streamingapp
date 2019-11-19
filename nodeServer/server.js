@@ -1,5 +1,8 @@
 var createWorker = require("tiny-worker");
-var worker = new createWorker("trackerModuleThread.js");
+//var worker = new createWorker("trackerModuleThread.js");
+const { Worker } = require('worker_threads')
+var workerData;
+const worker = new Worker('./trackerModuleThread.js', { workerData });
 
 var port = 3000;
 var express = require("express");
@@ -14,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/../dist/stoicksVisonApp')));
+
 
 
 let http = require('http');
@@ -39,7 +43,8 @@ io.on('connection', (socket) => {
 
 socket.on('new-message', (message) => {
 	console.log(message);
-        io.emit('tcpdata', message);
+	worker.on('message', (data)=>{io.emit('tcpdata', data.bu)});
+        
     });
     
 
