@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div *ngFor="let message of messages">
+    {{message}}
+</div>
+
+<input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()" />
+<button (click)="sendMessage()">Send</button>
+
+
+<div id="videoScreen"></div>
+<video id="remoteVideo"></video>

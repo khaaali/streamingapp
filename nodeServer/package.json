@@ -1,0 +1,22 @@
+{
+  "name": "stoickvision",
+  "version": "1.0.0",
+  "description": "streanerwiththreads",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ramvankamamidi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "morgan": "^1.7.0",
+    "osc": "^2.3.1",
+    "socket.io": "^2.3.0",
+    "threads": "^1.0.0-beta.3",
+    "tiny-worker": "^2.2.0"
+  }
+}

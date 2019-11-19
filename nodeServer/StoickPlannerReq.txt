@@ -1,0 +1,11 @@
+Requirements:
+Words: budget, allocation, planner, amount, expenses, asset, liability 
+
+
+Navigation:
+1) App uses navigation bar at the bottom with icons, home, add, others?
+2) Home: This view/cards donut chart which represents the total amount in allocated % or expenses, which is sum of all the months so far added
+3) Add: This view/cards creates a monthly donut chart with expenses, takes user input as 
+   date(global), expense name, expense amount or % and total amount 
+
+

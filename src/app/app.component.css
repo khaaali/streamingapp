@@ -1,0 +1,6 @@
+#videoScreen{
+    height: 720px;
+    width: 1280px;
+    margin: 100px auto;
+    background-color: rgb(39, 37, 37)
+}
