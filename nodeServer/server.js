@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/../dist/stoicksVisonApp')));
 
+//  start using node --experimental-worker server.js 
 
 
 let http = require('http');
