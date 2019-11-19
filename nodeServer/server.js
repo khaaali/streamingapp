@@ -1,8 +1,8 @@
 var createWorker = require("tiny-worker");
 //var worker = new createWorker("trackerModuleThread.js");
 const { Worker } = require('worker_threads')
-var workerData;
-const worker = new Worker('./trackerModuleThread.js', { workerData });
+
+const worker = new Worker('./trackerModuleThread.js');
 
 var port = 3000;
 var express = require("express");

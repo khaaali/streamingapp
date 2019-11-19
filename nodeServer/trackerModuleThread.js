@@ -1,5 +1,5 @@
 // This thread reads data from tracker and uses osc for broadcasting 
-const { workerData, parentPort } = require('worker_threads')
+const {parentPort } = require('worker_threads')
 
 // creating TCP socket config
 const net = require('net');
