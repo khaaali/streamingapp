@@ -20,10 +20,19 @@ export class AppComponent {
 @ViewChild('canvasOutput',{static:false})
   canvasOutput: ElementRef;
 
-  constructor(private ngOpenCVService: NgOpenCVService) { }
+  constructor(
+  	private ngOpenCVService: NgOpenCVService,
+  	private streaming:StreamingService
+
+  	) { }
 
   ngOnInit() {
     this.openCVLoadResult = this.ngOpenCVService.isReady$;
+    this.streaming
+      .getMessages()
+      .subscribe((message: string) => {
+        this.messages.push(message);
+      });
   }
 
  loadImage(event) {
@@ -33,7 +42,7 @@ export class AppComponent {
       load$
         .pipe(
           switchMap(() => {
-            return this.ngOpenCVService.loadImageToHTMLCanvas(`${reader.result}`, this.canvasOutput.nativeElement);
+            return this.ngOpenCVService.loadImageToHTMLCanvas("./assets/pp.jpeg", this.canvasOutput.nativeElement);
           })
         )
         .subscribe(
@@ -45,10 +54,13 @@ export class AppComponent {
       reader.readAsDataURL(event.target.files[0]);
     }
   }
- // sendMessage() {
- //    this.streaming.sendMessage(this.message);
- //    this.message = '';
- //  }
+ 
+
+
+ sendMessage() {
+    this.streaming.sendMessage(this.message);
+    this.message = '';
+  }
 
  // ngOnInit() {
  //    this.streaming

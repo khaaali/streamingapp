@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
 
 socket.on('new-message', (message) => {
 	console.log(message);
-	worker.on('message', (data)=>{io.emit('tcpdata', data.bu)});
+	worker.on('message', (data)=>{io.emit('tcpdata', data.buf)});
         
     });
     

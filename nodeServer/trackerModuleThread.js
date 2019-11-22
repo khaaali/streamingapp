@@ -32,11 +32,11 @@ function MulticastNew(data) {
 
 
 client.on('data', function (data) {
-  var bu = readIntegerFromCurrentPos(data)
+  var buf = readIntegerFromCurrentPos(data)
  //console.log('int  : ' + currentPos);
   //console.log('bu  : ' + bu);
   //console.log('client.bytesRead  : ' + client.bytesRead);
-parentPort.postMessage({bu:bu })
+parentPort.postMessage({buf:data })
   // send incoming TCP as multicast data
   //MulticastNew(data)
 
