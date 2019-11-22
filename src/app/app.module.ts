@@ -4,6 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {StreamingService} from './streaming.service'
 import { FormsModule } from '@angular/forms';
+import { OpenCVOptions } from 'projects/ng-open-cv/src/public_api';
+import { NgOpenCVModule } from 'ng-open-cv';
+
+
+const openCVConfig: OpenCVOptions = {
+  scriptUrl: `assets/opencv/opencv.js`,
+  wasmBinaryFile: 'assets/opencv/opencv_js.wasm',
+  usingWasm: true
+};
+
 
 @NgModule({
   declarations: [
@@ -11,6 +21,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+     NgOpenCVModule.forRoot(openCVConfig),
     AppRoutingModule,
     FormsModule
   ],
