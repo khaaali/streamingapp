@@ -10,6 +10,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeNavComponent } from './home-nav/home-nav.component';
+import { SeatsNavComponent } from './seats-nav/seats-nav.component';
+import { WifiNavComponent } from './wifi-nav/wifi-nav.component';
+import { SettingsNavComponent } from './settings-nav/settings-nav.component';
+import { ShowRightNavComponent } from './show-right-nav/show-right-nav.component';
 const openCVConfig: OpenCVOptions = {
   scriptUrl: `assets/opencv/opencv.js`,
   wasmBinaryFile: 'assets/opencv/opencv_js.wasm',
@@ -19,7 +24,12 @@ const openCVConfig: OpenCVOptions = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeNavComponent,
+    SeatsNavComponent,
+    WifiNavComponent,
+    SettingsNavComponent,
+    ShowRightNavComponent
   ],
   imports: [
     BrowserModule,
