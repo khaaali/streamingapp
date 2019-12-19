@@ -20,10 +20,11 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,6 +121,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "stoicksVisonApp"
 }
