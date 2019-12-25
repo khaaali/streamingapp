@@ -1,9 +1,9 @@
 .example-container {
     position: fixed;
-    top: 12px;
-    bottom: 100px;
-    left: 10;
-    right: 10;
+    top: 65px;
+    bottom: 18px;
+    left: 0px;
+    right: 50;
   }
   
   .example-events {
@@ -11,4 +11,39 @@
     height: 200px;
     overflow: auto;
     border: 1px solid #555;
+  }
+
+
+  .fixed-divs {
+    position: fixed;
+    bottom:0;
+    right: 75%;
+    }
+
+    #side-nav-ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 5px;
+      /* background-color: rgb(203, 205, 223); */
+  
+    }
+
+    .White-icon{
+      color: white;
+    }
+  
+
+    #side-column {
+      
+  }
+  #left-column {
+    float:left;
+    display:inline-block;
+    
+     
+  }
+  #right-column{
+    float:right;
+    display:inline-block;
+      
   }

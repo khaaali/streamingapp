@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'ShowRightNav', component: ShowRightNavComponent },
   { path: 'HomeNav', component: HomeNavComponent },
   { path: 'SeatsNav', component: SeatsNavComponent }, 
+  { path: '*', component: HomeNavComponent }, 
 ];
 
 @NgModule({

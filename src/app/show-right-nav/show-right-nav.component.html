@@ -1,4 +1,8 @@
-<mat-sidenav-container class="example-container" >
+<div id="side-column">
+
+<div id="left-column">
+
+  <mat-sidenav-container class="example-container" >
     <mat-sidenav #sidenav mode="over" [(opened)]="opened" (opened)="events.push('open!')"
                  (closed)="events.push('close!')">
       Sidenav content
@@ -12,3 +16,34 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
+
+<div id="right-column">
+  
+  <div id="sidenav" class="fixed-divs"> 
+    <ul id="side-nav-ul" >
+        
+        <li >
+          <a  routerLink="/WifiNav">
+            <mat-icon class="White-icon">network_wifi</mat-icon>
+        </a>
+      </li>
+      
+    
+        <li >
+          <a  routerLink="/SettingsNav">
+            <mat-icon class="White-icon">settings</mat-icon>
+        </a>
+      </li>
+      
+    
+      <li >
+          <a routerLink="/HomeNav">
+            <mat-icon class="White-icon" >keyboard_arrow_left</mat-icon>
+        </a>
+      </li>
+      
+      </ul>
+</div>
+</div>
+</div>

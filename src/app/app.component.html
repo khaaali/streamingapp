@@ -64,48 +64,40 @@
       <span class="spacer"></span>
     
     
-        <a  class="nav-link" routerLink="HomeNav">
+        <a  class="nav-link" routerLink="/HomeNav">
             <mat-icon class="White-icon">home</mat-icon>
   
         </a>
    
-      <a  class="nav-link" routerLink="SeatsNav">
+      <a  class="nav-link" routerLink="/SeatsNav">
           <mat-icon class="White-icon">grid_on</mat-icon>
       </a>
     </mat-toolbar>
 
 
-<!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
 
 <div id="sidenav" class="fixed-div"> 
         <ul id="side-nav-ul" >
             
             <li >
-              <!-- <button id="wifinav"> -->
-              <a  routerLink="WifiNav">
+              <a  routerLink="/WifiNav">
                 <mat-icon class="White-icon">network_wifi</mat-icon>
             </a>
-          <!-- </button> -->
           </li>
           
         
             <li >
-              <!-- <button id="settingsnav" > -->
-              <a  routerLink="SettingsNav">
+              <a  routerLink="/SettingsNav">
                 <mat-icon class="White-icon">settings</mat-icon>
             </a>
-          <!-- </button> -->
           </li>
           
         
           <li >
-            <!-- <button id="showrightnav"> -->
-              <a routerLink="ShowRightNav">
+              <a  routerLink="/ShowRightNav">
                 <mat-icon class="White-icon" >keyboard_arrow_right</mat-icon>
             </a>
-          <!-- </button> -->
           </li>
-          
           </ul>
 </div>
 
@@ -113,10 +105,6 @@
 <div class="container">
   <router-outlet></router-outlet> 
 </div>
-
-
-<!-- <app-show-right-nav></app-show-right-nav> -->
-
 
 
 
