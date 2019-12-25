@@ -12,6 +12,9 @@ export class AppComponent {
     title = 'stoicksVisonApp';
     message : string;
     messages : string[] = [];
+    
+    opened: boolean;
+    events: string[] = [];
 
     @ViewChild('canvasOutput', {static: false})
     canvasOutput : ElementRef;

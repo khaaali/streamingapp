@@ -32,7 +32,7 @@
 <!-- https://icons8.com/icons/set/grid 40-->
 <!-- https://icons8.com/icons/set/home 35 -->
 
-<div class="borders">
+<!-- <div class="borders">
 </div>
 
 <div id="headernavbar">
@@ -42,28 +42,37 @@
   <li class="nav-item">
       <a  class="nav-link" href="HomeNav">
           <mat-icon class="White-icon">home</mat-icon>
-        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAABbElEQVRYhe2UvUoDQRSFz5WA4A8hlUSfwCoIVkqKYC34GHaWvoLgCwQLC5uUipWdjVgEWwsbYxPQUrNp/SwyK+smm524m02zB4blzsy58+1hGKnUHAUsL5pBkgQ0gT7QXDTIPvDFSEOgtSiQJjBwIN/uOyg8oVgiL8AO8Fx4QhNANt38RqFASSCR9WKA0kAKA/IFmTvQrCBzA/ovSO5AWUFyA8oLJDMQf1/WV6CeBSTSt+76gc9LHUsEoJMHSKR/J9J7LKFKZOOupDtJax5NjyVVp2z5NLN2SpsVSbdAy8ye4gesAvfujlxNSwboMV29BF+YzKW7Qw/Aerj+m4yZDYFDjZI5SfmrUI+S+pF6S9Keh+9D0oGkwMyCMRgHFEgKAE8WnZvZTVgAR5KufYxm9h6fW/I9tQiVMEkqYZJUwiSpkrLeAM4mzNdSfLUEXyMLzLYbs6oq6XRWUxJMV9KFh/9tQu3j63rsKVUqVT/SVEUBy/buuwAAAABJRU5ErkJggg==">   -->
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAABbElEQVRYhe2UvUoDQRSFz5WA4A8hlUSfwCoIVkqKYC34GHaWvoLgCwQLC5uUipWdjVgEWwsbYxPQUrNp/SwyK+smm524m02zB4blzsy58+1hGKnUHAUsL5pBkgQ0gT7QXDTIPvDFSEOgtSiQJjBwIN/uOyg8oVgiL8AO8Fx4QhNANt38RqFASSCR9WKA0kAKA/IFmTvQrCBzA/ovSO5AWUFyA8oLJDMQf1/WV6CeBSTSt+76gc9LHUsEoJMHSKR/J9J7LKFKZOOupDtJax5NjyVVp2z5NLN2SpsVSbdAy8ye4gesAvfujlxNSwboMV29BF+YzKW7Qw/Aerj+m4yZDYFDjZI5SfmrUI+S+pF6S9Keh+9D0oGkwMyCMRgHFEgKAE8WnZvZTVgAR5KufYxm9h6fW/I9tQiVMEkqYZJUwiSpkrLeAM4mzNdSfLUEXyMLzLYbs6oq6XRWUxJMV9KFh/9tQu3j63rsKVUqVT/SVEUBy/buuwAAAABJRU5ErkJggg==">   
+
       </a>
   </li>
   <li class="nav-item">
     <a  class="nav-link" href="SeatsNav">
         <mat-icon class="White-icon">grid_on</mat-icon>
-      <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAAsUlEQVRYhe3VsQ3CMBQE0DPKTLAF69AF1mACFoFVUgE9BRxNIiF8YBzJn+Zek+jnEn0X0QFmVo/kgeSDuQvJVatczYJ38bFJ3yqndB/mi/F6AnAc7zdvz1rkfvNyul3kTKnfPlhpwe10zOBcccHrl3fODXOZpIYklwDWyH+iAcA+pXRrkbMwdJPonOImqZkpbpKZueKCbhKVszB0k+ic4iapmSlukpm54oJuEpUzM/uDJ8yIoeCBvIZmAAAAAElFTkSuQmCC">    -->
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAAsUlEQVRYhe3VsQ3CMBQE0DPKTLAF69AF1mACFoFVUgE9BRxNIiF8YBzJn+Zek+jnEn0X0QFmVo/kgeSDuQvJVatczYJ38bFJ3yqndB/mi/F6AnAc7zdvz1rkfvNyul3kTKnfPlhpwe10zOBcccHrl3fODXOZpIYklwDWyH+iAcA+pXRrkbMwdJPonOImqZkpbpKZueKCbhKVszB0k+ic4iapmSlukpm54oJuEpUzM/uDJ8yIoeCBvIZmAAAAAElFTkSuQmCC">    
     </a>
     </li>
 </ul>
 </div>
-</div>
+</div> -->
 
-<!--   
-    <button >
-      <mat-icon>home</mat-icon>
-    </button>
-    <button >
-      <mat-icon>grid_on</mat-icon>
-    </button>
-    -->
 
+    <mat-toolbar id="headernavbar" >
+      <span></span>
+    
+      <!-- This fills the remaining space of the current row -->
+      <span class="spacer"></span>
+    
+    
+        <a  class="nav-link" routerLink="HomeNav">
+            <mat-icon class="White-icon">home</mat-icon>
+  
+        </a>
+   
+      <a  class="nav-link" routerLink="SeatsNav">
+          <mat-icon class="White-icon">grid_on</mat-icon>
+      </a>
+    </mat-toolbar>
 
 
 <!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
@@ -73,7 +82,7 @@
             
             <li >
               <!-- <button id="wifinav"> -->
-              <a  href="WifiNav">
+              <a  routerLink="WifiNav">
                 <mat-icon class="White-icon">network_wifi</mat-icon>
             </a>
           <!-- </button> -->
@@ -82,7 +91,7 @@
         
             <li >
               <!-- <button id="settingsnav" > -->
-              <a  href="SettingsNav">
+              <a  routerLink="SettingsNav">
                 <mat-icon class="White-icon">settings</mat-icon>
             </a>
           <!-- </button> -->
@@ -91,14 +100,25 @@
         
           <li >
             <!-- <button id="showrightnav"> -->
-              <a  href="ShowRightNav">
-                <mat-icon class="White-icon">keyboard_arrow_right</mat-icon>
+              <a routerLink="ShowRightNav">
+                <mat-icon class="White-icon" >keyboard_arrow_right</mat-icon>
             </a>
           <!-- </button> -->
           </li>
           
           </ul>
 </div>
+
+
+<div class="container">
+  <router-outlet></router-outlet> 
+</div>
+
+
+<!-- <app-show-right-nav></app-show-right-nav> -->
+
+
+
 
 
 <!--The content below is only a placeholder and can be replaced.-->

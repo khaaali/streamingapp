@@ -15,6 +15,10 @@ import { SeatsNavComponent } from './seats-nav/seats-nav.component';
 import { WifiNavComponent } from './wifi-nav/wifi-nav.component';
 import { SettingsNavComponent } from './settings-nav/settings-nav.component';
 import { ShowRightNavComponent } from './show-right-nav/show-right-nav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
 const openCVConfig: OpenCVOptions = {
   scriptUrl: `assets/opencv/opencv.js`,
   wasmBinaryFile: 'assets/opencv/opencv_js.wasm',
@@ -39,7 +43,9 @@ const openCVConfig: OpenCVOptions = {
     BrowserAnimationsModule,
     MatSliderModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule,
   ],
   providers: [StreamingService],
   bootstrap: [AppComponent]
